@@ -1,0 +1,4 @@
+baseURL = "https://metrologyforall.com"
+languageCode = "en-us"
+title = "Metrology for All"
+uglyURLs = true

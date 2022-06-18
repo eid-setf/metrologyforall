@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+    {{ range .Params.images }}
+        <img style="padding: 2em; max-height: 70vh; max-width: 600px;" src="{{ . }}" alt="">
+    {{ end }}
+    <h2>{{ .Title }}</h2>
+    <div class="center-text">
+        {{ .Content }}
+    </div>
+
+{{ end }}

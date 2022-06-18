@@ -1,0 +1,12 @@
+<div class="vol-card">
+    {{ if .Params.images }}
+        <a href="{{ .RelPermalink }}"><img class="vol-card-image" src="{{ index .Params.images 0 }}" alt="{{ .Title }}"></a>
+    {{ end }}
+
+    <div class="card-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }} - {{ .Params.region }}</a>
+    </div>
+    <div class="card-content">
+        {{ .Content }}
+    </div>
+</div>

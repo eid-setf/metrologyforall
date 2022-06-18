@@ -1,0 +1,14 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h2>
+    <div class="center-text">
+        {{ .Content }}
+        <hr id="vol">
+    </div>
+   
+    <div class="cards">
+        {{ range (where .Site.RegularPages.ByDate "Section" "volunteer")}}
+            {{ partial "widgets/vol-card.html" . }}
+        {{ end }}
+    </div>
+
+{{ end }}
