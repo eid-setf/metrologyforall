@@ -2,3 +2,7 @@ baseURL = "https://metrologyforall.com"
 languageCode = "en-us"
 title = "Metrology for All"
 uglyURLs = true
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-J34JQKH9SS'
